@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Secret</title>
+</head>
+<body>
+    <div>
+        Secret area
+        Claims:
+        <dl>
+            @foreach (var claim in User.Claims)
+            {
+                <dt>@claim.Type</dt>
+                <dd>@claim.Value</dd>
+            }
+            Current user name : @User?.Identity?.Name
+        </dl>
+    </div>
+</body>
+</html>

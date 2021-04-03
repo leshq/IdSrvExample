@@ -1,0 +1,5 @@
+﻿**/obj
+**/bin
+.vs/AmazonTool/v16/.suo
+*.suo
+.vs
